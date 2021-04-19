@@ -1,0 +1,402 @@
+/* FONTS DO SITE */
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("fonts/Pixer-Regular.otf");
+}
+@font-face {
+    font-family: 'FonteLog';
+    src: url("fonts/Quantum.otf");
+}
+@font-face {
+    font-family: 'FonteTxt';
+    src: url("fonts/GOOD.otf");
+}
+/* CONFIGURAÇÃO DO TITULO */
+h1#txt-titulo {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'FonteLogo', sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+h1#txt-titulo:after {
+    content: '|' ; /* A BARRA DO CURSOS */
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca { /* ANIMAÇÃO DE PISCAR COM CSS */
+    0%, 100% {
+        opacity: 1;
+    }
+    53% {
+        opacity: 0;
+    }
+}
+/* CONFIGURAÇÃO DO SCROL */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        45deg,
+        #e106c4,
+        #0fc2da
+    );
+    border-radius: 5px;
+}
+/* CONFIGURAÇÃO DO BODY */
+body#corpo {
+    position: relative;
+    background: linear-gradient(-45deg, rgb(17, 18, 22), #0a1c33, #292e30, #211d30);
+    background-size: 400% 400%;
+}
+section {
+    margin: 50px;
+}
+/* CONFIGURAÇÃO DO MENU */
+img#logo {
+    width: 50px;
+}
+.navbar {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: 1s ease-in-out;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.486);
+}
+#barra-conteudos {
+    border: 2px solid white;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    transition: 1s ease-in-out;
+}
+/* SLIDER */
+#carouselExampleIndicators {
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+#slid2 {
+    border-radius: 40px;
+}
+/* CARD */
+#img-card {
+    height: 100%;
+    width: 100%;
+}
+#gf {
+    height: 100%;
+    width: 100%;
+}
+/* COLLAPSE */
+#tab01 {
+    text-align: center;
+    align-items: center;
+    margin-left: 33px;
+    margin-right: 33px;
+    margin-top: 15px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background: linear-gradient(-45deg, #2600ff, #00edf5);
+    background-size: 400% 400%;
+}
+#tab02 {
+    text-align: center;
+    border-radius: 30px;
+}
+#tab03 {
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 9px;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+/* LINHA SEPARADOR */
+hr#se {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 0;
+    border-top: 2px solid rgb(5, 95, 230);
+    animation: entrada01 1.2s ease-in-out;
+}
+@keyframes entrada01 {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    50% {
+        opacity: 0,6;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/* CONFIGURAÇÃO DO TITULO DAS PAGINAS */
+#titu-pg {
+    color: rgb(9, 255, 153);
+    font-size: 55px;
+    margin-top: 15px;
+    font-family: 'FonteLog', sans-serif;
+    text-align: center;
+    animation: entrada 1s ease-in-out;
+}
+@keyframes entrada {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    50% {
+        opacity: 0,6;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* OS CONTAINERS DA PAGINA SOBRE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #060c21;
+    margin: 40px;
+}
+.box:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.box:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+.box:nth-child(1):before,
+.box:nth-child(1):after {
+    background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+    background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+    background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+.box .glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: rgba(255, 255, 255,.1);
+    pointer-events: none;
+}
+.box .content {
+    padding: 20px;
+    color: #fff;
+}
+/* TABELA DE SELEÇÃO */
+input {
+    margin: 20px;
+    border: 2px solid black;
+    padding-left: 10px;
+    width: 220px;
+    transition: 1s ease-in-out;
+}
+input:hover {
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    color: black;
+}
+tr {
+    margin-left: 5px;
+    text-align: justify;
+    background-color: #060c21;
+}
+td {
+    margin-left: 5px;
+    margin-top: 20px;
+    text-align: justify;
+    padding-left: 4px;
+    padding-right: 45px;
+    color: rgb(255, 255, 255);
+    border: 1px #CCC solid; 
+}
+table {
+    margin-left: 5px;
+    margin-top: 20px;
+    text-align: justify;
+}
+#sec01 {
+    margin-left: 5px;
+    margin: 0px;
+}
+/* ANIMAÇÃO DO INDEX */
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+}
+[data-anime="left"] {
+    transform: scale3d(1.2, 1.8, 1.8);
+}
+[data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+}
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+}
+[data-anime].animate {
+    transform: scale3d(0, 0, 0);
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+/* TESTE */
+.sec3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* CONFIGURAÇÃO DO CARD HOVER */
+.card-block .btn-outline-primary {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+  
+.card {
+    margin: 20px 0;
+}
+  
+  /* Flip Cards CSS */
+.card-container {
+    perspective: 700px;
+}
+.card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+}
+  
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+}
+  
+.card-flip .front {
+    position: relative;
+    z-index: 1;
+}
+  
+.card-flip .back {
+    position: relative;
+    z-index: 0;
+    transform: rotateY(-180deg);
+}
+  
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+#txt-cards  {    /* <-- TITULO DOS CARDS  */
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin-top: 20px;
+    font-family: 'FonteTxt', sans-serif;
+    text-align: center;
+}    
+.front img {
+    width: 100px;
+} 
+#cardcss {
+    border: 1px solid white;
+    background: #46b8b0;
+}
+#cardjs {
+    border: 1px solid white;
+    background: #ecc158;
+}
+#cardhtml {
+    border: 1px solid white;
+    background: #fe4365;
+}
+.back {
+    background: linear-gradient(-45deg, #4b5455, #333061);
+}
+.back p {
+    font-size: 13px;
+    padding: 8px;
+    text-align: justify;
+    color: white;
+}
+.front h6 {
+    color: white;
+}
+mark#m {
+    background-color: rgb(177, 253, 0);
+    border-radius: 6px;
+}
+/* CONFIGURAÇÃO DO VIDEO */
+.vid {
+    border-color: -moz-linear-gradient(top, #00a2ff, #00eeff);
+    width: 600px;
+}
+
+.vid video {
+    box-shadow: 10px 5px 5px 3px rgba(0, 0, 0, 0.486);
+    width: 100%;
+}
+.vid h1 {
+    margin: 20px;
+    font-family: 'FonteTxt', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
